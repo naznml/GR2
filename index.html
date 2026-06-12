@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General English Grammar | Part 2</title>
+
+  <style>
+    :root {
+      --bg-1: #fff7fb;
+      --bg-2: #f4f0ff;
+      --bg-3: #eef7ff;
+      --text: #172033;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --primary: #7c3aed;
+      --primary-dark: #5b21b6;
+      --pink: #ec4899;
+      --blue: #2563eb;
+      --green: #16a34a;
+      --orange: #f97316;
+      --red: #ef4444;
+      --card: rgba(255, 255, 255, 0.82);
+      --border: rgba(124, 58, 237, 0.15);
+      --shadow: 0 18px 48px rgba(76, 29, 149, 0.12);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(236, 72, 153, 0.16), transparent 32%),
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.14), transparent 30%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2) 48%, var(--bg-3));
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124, 58, 237, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124, 58, 237, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .page-shell {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: relative;
+      z-index: 10;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid rgba(124, 58, 237, 0.12);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 210px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, var(--primary), var(--pink));
+      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.22);
+    }
+
+    .brand-title {
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      font-size: 15px;
+    }
+
+    .brand-subtitle {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 5px;
+      padding: 5px;
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 8px 24px rgba(76, 29, 149, 0.08);
+    }
+
+    .lang-btn {
+      border: 0;
+      cursor: pointer;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 850;
+      font-size: 12px;
+      transition: 0.22s ease;
+    }
+
+    .lang-btn.active {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--pink));
+      box-shadow: 0 9px 20px rgba(124, 58, 237, 0.2);
+    }
+
+    .ghost-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      background: rgba(255, 255, 255, 0.65);
+      color: var(--primary-dark);
+      font-weight: 850;
+      font-size: 12px;
+      transition: 0.22s ease;
+    }
+
+    .ghost-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(76, 29, 149, 0.1);
+    }
+
+    .hero {
+      padding: 42px 0 24px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -70px -80px auto auto;
+      width: 230px;
+      height: 230px;
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.17), transparent 68%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.09);
+      color: var(--primary-dark);
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5.4vw, 64px);
+      line-height: 0.96;
+      letter-spacing: -0.065em;
+      max-width: 760px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary), var(--pink));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-lead {
+      max-width: 730px;
+      color: #4b5563;
+      font-size: 16px;
+      line-height: 1.65;
+      margin-top: 18px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 13px;
+      border: 0;
+      cursor: pointer;
+      transition: 0.22s ease;
+    }
+
+    .primary-btn {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--pink));
+      box-shadow: 0 14px 30px rgba(124, 58, 237, 0.22);
+    }
+
+    .secondary-btn {
+      color: var(--primary-dark);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(124, 58, 237, 0.16);
+    }
+
+    .primary-btn:hover,
+    .secondary-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .stats-panel {
+      display: grid;
+      gap: 12px;
+    }
+
+    .stat-card {
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      box-shadow: 0 14px 34px rgba(76, 29, 149, 0.09);
+    }
+
+    .stat-number {
+      font-size: 30px;
+      font-weight: 950;
+      letter-spacing: -0.055em;
+      color: var(--primary-dark);
+    }
+
+    .stat-label {
+      color: #4b5563;
+      line-height: 1.5;
+      margin-top: 5px;
+      font-weight: 650;
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 28px 0;
+      scroll-margin-top: 28px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-kicker {
+      color: var(--primary-dark);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 11px;
+      margin-bottom: 7px;
+    }
+
+    .section-title {
+      font-size: clamp(25px, 3.6vw, 42px);
+      line-height: 1.06;
+      letter-spacing: -0.052em;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 720px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .rules-track-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      box-shadow: var(--shadow);
+      padding: 14px;
+    }
+
+    .rules-track {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .rule-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 218px;
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      border-radius: 22px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.84);
+      cursor: pointer;
+      transition: 0.22s ease;
+    }
+
+    .rule-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 42px rgba(76, 29, 149, 0.15);
+    }
+
+    .rule-card::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -50px;
+      top: -54px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.17), transparent 66%);
+    }
+
+    .rule-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 21px;
+      font-weight: 950;
+      margin-bottom: 15px;
+      box-shadow: 0 12px 24px rgba(76, 29, 149, 0.17);
+    }
+
+    .rule-card:nth-child(1) .rule-icon {
+      background: linear-gradient(135deg, var(--pink), var(--primary));
+    }
+
+    .rule-card:nth-child(2) .rule-icon {
+      background: linear-gradient(135deg, var(--blue), var(--primary));
+    }
+
+    .rule-card:nth-child(3) .rule-icon {
+      background: linear-gradient(135deg, var(--green), var(--blue));
+    }
+
+    .rule-card h3 {
+      font-size: 23px;
+      letter-spacing: -0.043em;
+      margin-bottom: 4px;
+    }
+
+    .rule-mini {
+      color: var(--primary-dark);
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .rule-card p {
+      color: #4b5563;
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .rule-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 15px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.08);
+      color: var(--primary-dark);
+      font-weight: 850;
+      font-size: 11px;
+    }
+
+    .sticky-nav {
+      position: relative;
+      z-index: 9;
+      padding: 9px 0;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 247, 251, 0.7);
+      border-top: 1px solid rgba(124, 58, 237, 0.08);
+      border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+    }
+
+    .nav-scroll {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+      display: flex;
+      gap: 9px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+    }
+
+    .nav-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-item {
+      flex: 0 0 auto;
+      min-width: 122px;
+      border-radius: 16px;
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(124, 58, 237, 0.13);
+      transition: 0.22s ease;
+    }
+
+    .nav-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(76, 29, 149, 0.09);
+    }
+
+    .nav-main {
+      display: block;
+      font-size: 13px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-sub {
+      display: block;
+      margin-top: 3px;
+      font-size: 10.5px;
+      color: var(--muted);
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .content-card {
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      box-shadow: var(--shadow);
+    }
+
+    .grammar-section {
+      padding: 34px 0;
+      scroll-margin-top: 28px;
+    }
+
+    .grammar-hero {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+
+    .grammar-title-card,
+    .grammar-info-card {
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      box-shadow: 0 14px 34px rgba(76, 29, 149, 0.09);
+    }
+
+    .grammar-title-card h2 {
+      font-size: clamp(30px, 4.6vw, 56px);
+      line-height: 0.96;
+      letter-spacing: -0.062em;
+    }
+
+    .grammar-title-card .translation {
+      margin-top: 10px;
+      color: var(--primary-dark);
+      font-weight: 950;
+      font-size: 16px;
+    }
+
+    .grammar-info-card p {
+      color: #4b5563;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    .subunit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .subunit-chip {
+      display: block;
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(124, 58, 237, 0.07);
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      transition: 0.22s ease;
+    }
+
+    .subunit-chip:hover {
+      transform: translateY(-2px);
+      background: rgba(124, 58, 237, 0.1);
+    }
+
+    .subunit-chip strong {
+      display: block;
+      font-size: 12px;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .subunit-chip span {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .subunit {
+      margin-top: 20px;
+      border-radius: var(--radius-xl);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+      box-shadow: 0 14px 38px rgba(76, 29, 149, 0.09);
+      overflow: hidden;
+      scroll-margin-top: 28px;
+    }
+
+    .subunit-header {
+      padding: 20px 22px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(236, 72, 153, 0.08));
+      border-bottom: 1px solid rgba(124, 58, 237, 0.12);
+    }
+
+    .subunit-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 9px;
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--primary-dark);
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    .subunit-header h3 {
+      font-size: clamp(22px, 2.8vw, 34px);
+      letter-spacing: -0.048em;
+      line-height: 1.06;
+    }
+
+    .subunit-translation {
+      color: var(--muted);
+      margin-top: 7px;
+      font-weight: 750;
+      font-size: 14px;
+    }
+
+    .subunit-body {
+      padding: 22px;
+    }
+
+    .lesson-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 16px;
+    }
+
+    .lesson-box {
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      background: rgba(255, 255, 255, 0.74);
+    }
+
+    .lesson-box h4 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: var(--primary-dark);
+    }
+
+    .lesson-box p,
+    .lesson-box li {
+      color: #4b5563;
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .lesson-box ul {
+      padding-left: 18px;
+      display: grid;
+      gap: 7px;
+    }
+
+    .formula-box {
+      margin: 16px 0;
+      padding: 15px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(37, 99, 235, 0.07));
+      border: 1px dashed rgba(124, 58, 237, 0.28);
+      font-weight: 900;
+      color: var(--primary-dark);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .formula-note {
+      margin: -6px 0 16px;
+      padding: 11px 14px;
+      border-radius: 16px;
+      color: #5b21b6;
+      background: rgba(124, 58, 237, 0.07);
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      font-size: 12.5px;
+      line-height: 1.5;
+      font-weight: 750;
+    }
+
+    .example-box {
+      margin-top: 12px;
+      padding: 15px;
+      border-radius: 18px;
+      background: rgba(248, 250, 252, 0.84);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .example-sentence {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #111827;
+      margin-bottom: 7px;
+    }
+
+    .example-note {
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .mark {
+      display: inline-block;
+      padding: 1px 6px 3px;
+      border-radius: 8px;
+      font-weight: 900;
+    }
+
+    .mark.numeral {
+      background: rgba(249, 115, 22, 0.16);
+      color: #c2410c;
+      box-shadow: inset 0 -2px 0 rgba(249, 115, 22, 0.24);
+    }
+
+    .mark.verb {
+      background: rgba(37, 99, 235, 0.15);
+      color: #1d4ed8;
+      box-shadow: inset 0 -2px 0 rgba(37, 99, 235, 0.24);
+    }
+
+    .mark.tense {
+      background: rgba(22, 163, 74, 0.16);
+      color: #15803d;
+      box-shadow: inset 0 -2px 0 rgba(22, 163, 74, 0.24);
+    }
+
+    .mark.modal {
+      background: rgba(124, 58, 237, 0.16);
+      color: #5b21b6;
+      box-shadow: inset 0 -2px 0 rgba(124, 58, 237, 0.24);
+    }
+
+    .mark.nonfinite {
+      background: rgba(236, 72, 153, 0.16);
+      color: #be185d;
+      box-shadow: inset 0 -2px 0 rgba(236, 72, 153, 0.24);
+    }
+
+    .mistake-box {
+      margin-top: 16px;
+      border-radius: 18px;
+      padding: 15px;
+      background: rgba(254, 242, 242, 0.75);
+      border: 1px solid rgba(239, 68, 68, 0.18);
+    }
+
+    .mistake-box h4 {
+      color: #b91c1c;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .mistake-box p {
+      color: #7f1d1d;
+      line-height: 1.55;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .test-box {
+      margin-top: 18px;
+      border-radius: var(--radius-xl);
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(124, 58, 237, 0.14);
+    }
+
+    .test-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .test-header h4 {
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-badge {
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.08);
+      color: var(--primary-dark);
+      font-weight: 900;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .question {
+      padding: 15px;
+      border-radius: 17px;
+      background: rgba(248, 250, 252, 0.84);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      margin-bottom: 12px;
+    }
+
+    .question p {
+      line-height: 1.55;
+      font-weight: 850;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .options {
+      display: grid;
+      gap: 8px;
+    }
+
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      background: rgba(255, 255, 255, 0.72);
+      cursor: pointer;
+      transition: 0.18s ease;
+      color: #374151;
+      line-height: 1.45;
+      font-weight: 650;
+      font-size: 13.5px;
+    }
+
+    .option:hover {
+      border-color: rgba(124, 58, 237, 0.34);
+      transform: translateY(-1px);
+    }
+
+    .option input {
+      margin-top: 3px;
+      accent-color: var(--primary);
+    }
+
+    .check-btn {
+      margin-top: 12px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 12px 16px;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--pink));
+      font-weight: 950;
+      box-shadow: 0 12px 26px rgba(124, 58, 237, 0.2);
+    }
+
+    .result-box {
+      display: none;
+      margin-top: 14px;
+      border-radius: 18px;
+      padding: 15px;
+      background: rgba(240, 253, 244, 0.78);
+      border: 1px solid rgba(22, 163, 74, 0.18);
+    }
+
+    .result-box.show {
+      display: block !important;
+    }
+
+    .result-box h5 {
+      color: #166534;
+      margin-bottom: 9px;
+      font-size: 15px;
+    }
+
+    .result-box p,
+    .result-box li {
+      color: #14532d;
+      line-height: 1.55;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .result-box ol {
+      padding-left: 18px;
+      display: grid;
+      gap: 7px;
+    }
+
+    .option.correct {
+      border-color: rgba(22, 163, 74, 0.55) !important;
+      background: rgba(240, 253, 244, 0.9) !important;
+      color: #14532d !important;
+    }
+
+    .option.wrong {
+      border-color: rgba(239, 68, 68, 0.45) !important;
+      background: rgba(254, 242, 242, 0.9) !important;
+      color: #7f1d1d !important;
+    }
+
+    .score-line {
+      margin-bottom: 12px;
+      padding: 11px 13px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(22, 163, 74, 0.15);
+      font-weight: 950;
+    }
+
+    .lang-content {
+      display: none;
+    }
+
+    body.lang-kk .lang-content[data-lang="kk"] {
+      display: block;
+    }
+
+    body.lang-ru .lang-content[data-lang="ru"] {
+      display: block;
+    }
+
+    .inline-lang {
+      display: none;
+    }
+
+    body.lang-kk .inline-lang[data-lang="kk"] {
+      display: inline;
+    }
+
+    body.lang-ru .inline-lang[data-lang="ru"] {
+      display: inline;
+    }
+
+    .block-lang {
+      display: none;
+    }
+
+    body.lang-kk .block-lang[data-lang="kk"] {
+      display: block;
+    }
+
+    body.lang-ru .block-lang[data-lang="ru"] {
+      display: block;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grammar-hero,
+      .lesson-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .rules-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+
+      .rules-track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .rule-card {
+        flex: 0 0 78%;
+        scroll-snap-align: start;
+      }
+
+      .subunit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page-shell,
+      .topbar-inner,
+      .nav-scroll {
+        width: min(100% - 20px, var(--max));
+      }
+
+      .topbar-inner {
+        min-height: auto;
+        padding: 10px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .brand {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .top-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .ghost-link {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+
+      .hero-card,
+      .content-card,
+      .grammar-title-card,
+      .grammar-info-card {
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero-lead {
+        font-size: 14.5px;
+      }
+
+      .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .rule-card {
+        flex-basis: 86%;
+        min-height: 205px;
+      }
+
+      .subunit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .subunit-body {
+        padding: 16px;
+      }
+
+      .subunit-header {
+        padding: 18px;
+      }
+
+      .test-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .lesson-box,
+      .test-box,
+      .question,
+      .example-box,
+      .mistake-box {
+        padding: 14px;
+      }
+
+      .nav-item {
+        min-width: 112px;
+      }
+    }
+  </style>
+</head>
+
+<body class="lang-kk">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <div class="brand-logo">GE</div>
+        <div>
+          <div class="brand-title">General English</div>
+          <div class="brand-subtitle">
+            <span class="inline-lang" data-lang="kk">Магистратураға дайындық</span>
+            <span class="inline-lang" data-lang="ru">Подготовка к магистратуре</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="top-actions">
+        <div class="language-switch" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-set-lang="kk">Қазақша</button>
+          <button class="lang-btn" type="button" data-set-lang="ru">Русский</button>
+        </div>
+
+        <a class="ghost-link" href="#rules-map">
+          <span>Grammar Map</span>
+          <span>↓</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="page-shell hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">
+            <span>Part 2</span>
+            <span>•</span>
+            <span>Numeral · Verb · Non-finite Forms</span>
+          </div>
+
+          <h1>
+            Grammar Practice <br />
+            <span class="gradient-text">Part 2</span>
+          </h1>
+
+          <div class="lang-content" data-lang="kk">
+            <p class="hero-lead">
+              Бұл сайт General English грамматикасының екінші бөліміне арналған. Мұнда сан есім,
+              етістік шақтары, active/passive voice және жақсыз етістік формалары қарастырылады.
+              Әр sub-unit ішінде қысқа ағылшынша rule, қазақша түсіндіру, мысалдар, жиі қателер және тесттер болады.
+            </p>
+          </div>
+
+          <div class="lang-content" data-lang="ru">
+            <p class="hero-lead">
+              Этот сайт посвящён второй части General English grammar. Здесь изучаются числительные,
+              времена глагола, active/passive voice и неличные формы глагола. В каждом sub-unit будут
+              короткое английское правило, русское объяснение, примеры, частые ошибки и тесты.
+            </p>
+          </div>
+
+          <div class="hero-buttons">
+            <a class="primary-btn" href="#rules-map">
+              <span class="inline-lang" data-lang="kk">Бастау</span>
+              <span class="inline-lang" data-lang="ru">Начать</span>
+              <span>→</span>
+            </a>
+
+            <a class="secondary-btn" href="#numeral">
+              <span>Numeral</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="stats-panel">
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">
+              <span class="inline-lang" data-lang="kk">бір сайттағы үлкен grammar blocks</span>
+              <span class="inline-lang" data-lang="ru">больших grammar blocks на этом сайте</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">A1–B2</div>
+            <div class="stat-label">
+              <span class="inline-lang" data-lang="kk">деңгейлер бойынша жүйелі дайындық</span>
+              <span class="inline-lang" data-lang="ru">системная подготовка по уровням</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">5×</div>
+            <div class="stat-label">
+              <span class="inline-lang" data-lang="kk">әр sub-unit соңында жеке тест</span>
+              <span class="inline-lang" data-lang="ru">отдельный тест после каждого sub-unit</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="rules-map">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">
+              <span class="inline-lang" data-lang="kk">Сайт картасы</span>
+              <span class="inline-lang" data-lang="ru">Карта сайта</span>
+            </div>
+
+            <h2 class="section-title">
+              <span class="inline-lang" data-lang="kk">Бұл сайтта өтетін 3 үлкен бөлім</span>
+              <span class="inline-lang" data-lang="ru">3 больших раздела на этом сайте</span>
+            </h2>
+
+            <p class="section-desc">
+              <span class="inline-lang" data-lang="kk">
+                Карточканы басқанда, сайт бірден сол бөлімге түседі. Телефонда карточкаларды оңға-солға сырғытып көруге болады.
+              </span>
+              <span class="inline-lang" data-lang="ru">
+                Нажмите на карточку, и сайт перейдёт к нужному разделу. На телефоне карточки можно листать свайпом.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rules-track-wrap">
+          <div class="rules-track">
+            <a class="rule-card" href="#numeral">
+              <div class="rule-icon">№</div>
+              <h3>Numeral</h3>
+              <div class="rule-mini">
+                <span class="inline-lang" data-lang="kk">Сан есім</span>
+                <span class="inline-lang" data-lang="ru">Числительное</span>
+              </div>
+              <p>
+                <span class="inline-lang" data-lang="kk">
+                  Сан, реттік сан, күндер және бөлшек сандарды дұрыс қолдану.
+                </span>
+                <span class="inline-lang" data-lang="ru">
+                  Употребление количественных, порядковых числительных, дат и дробей.
+                </span>
+              </p>
+              <div class="rule-meta">
+                <span class="pill">A1</span>
+                <span class="pill">3 sub-units</span>
+                <span class="pill">Tests</span>
+              </div>
+            </a>
+
+            <a class="rule-card" href="#verb">
+              <div class="rule-icon">V</div>
+              <h3>Verb</h3>
+              <div class="rule-mini">
+                <span class="inline-lang" data-lang="kk">Етістік</span>
+                <span class="inline-lang" data-lang="ru">Глагол</span>
+              </div>
+              <p>
+                <span class="inline-lang" data-lang="kk">
+                  Present, Past, Future шақтары, Present Perfect vs Past Simple және passive voice.
+                </span>
+                <span class="inline-lang" data-lang="ru">
+                  Времена Present, Past, Future, Present Perfect vs Past Simple и passive voice.
+                </span>
+              </p>
+              <div class="rule-meta">
+                <span class="pill">A1–B2</span>
+                <span class="pill">6 sub-units</span>
+                <span class="pill">Tests</span>
+              </div>
+            </a>
+
+            <a class="rule-card" href="#nonfinite">
+              <div class="rule-icon">NF</div>
+              <h3>Non-finite Forms</h3>
+              <div class="rule-mini">
+                <span class="inline-lang" data-lang="kk">Жақсыз етістік формалары</span>
+                <span class="inline-lang" data-lang="ru">Неличные формы глагола</span>
+              </div>
+              <p>
+                <span class="inline-lang" data-lang="kk">
+                  Modal verbs, infinitive, gerund және participle формаларын ажырату.
+                </span>
+                <span class="inline-lang" data-lang="ru">
+                  Различение modal verbs, infinitive, gerund и participle forms.
+                </span>
+              </p>
+              <div class="rule-meta">
+                <span class="pill">A2–B2</span>
+                <span class="pill">4 sub-units</span>
+                <span class="pill">Tests</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="sticky-nav" aria-label="Grammar navigation">
+      <div class="nav-scroll">
+        <a class="nav-item" href="#rules-map">
+          <span class="nav-main">Overview</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Жалпы карта</span>
+            <span class="inline-lang" data-lang="ru">Общая карта</span>
+          </span>
+        </a>
+
+        <a class="nav-item" href="#numeral">
+          <span class="nav-main">Numeral</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Сан есім</span>
+            <span class="inline-lang" data-lang="ru">Числительное</span>
+          </span>
+        </a>
+
+        <a class="nav-item" href="#verb">
+          <span class="nav-main">Verb</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Етістік</span>
+            <span class="inline-lang" data-lang="ru">Глагол</span>
+          </span>
+        </a>
+
+        <a class="nav-item" href="#nonfinite">
+          <span class="nav-main">Non-finite</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Жақсыз формалар</span>
+            <span class="inline-lang" data-lang="ru">Неличные формы</span>
+          </span>
+        </a>
+
+        <a class="nav-item" href="#final-test">
+          <span class="nav-main">Final Test</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Қорытынды тест</span>
+            <span class="inline-lang" data-lang="ru">Итоговый тест</span>
+          </span>
+        </a>
+      </div>
+    </nav>
