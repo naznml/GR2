@@ -960,6 +960,31 @@
       display: block;
     }
 
+
+
+    .back-to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      width: 46px;
+      height: 46px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--pink));
+      box-shadow: 0 14px 30px rgba(124, 58, 237, 0.28);
+      font-weight: 950;
+      font-size: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      transition: 0.22s ease;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-3px);
+    }
+
     @media (max-width: 980px) {
       .hero-grid,
       .grammar-hero,
@@ -1170,10 +1195,10 @@
           </div>
 
           <div class="stat-card">
-            <div class="stat-number">5×</div>
+            <div class="stat-number">Practice</div>
             <div class="stat-label">
-              <span class="inline-lang" data-lang="kk">әр sub-unit соңында жеке тест</span>
-              <span class="inline-lang" data-lang="ru">отдельный тест после каждого sub-unit</span>
+              <span class="inline-lang" data-lang="kk">түсіндіру + мысал + қысқа тест</span>
+              <span class="inline-lang" data-lang="ru">объяснение + пример + короткий тест</span>
             </div>
           </div>
         </aside>
@@ -1238,15 +1263,15 @@
               </div>
               <p>
                 <span class="inline-lang" data-lang="kk">
-                  Present, Past, Future шақтары, Present Perfect vs Past Simple және passive voice.
+                  Present, Past, Future шақтары, Conditionals, Present Perfect vs Past Simple және passive voice.
                 </span>
                 <span class="inline-lang" data-lang="ru">
-                  Времена Present, Past, Future, Present Perfect vs Past Simple и passive voice.
+                  Времена Present, Past, Future, Conditionals, Present Perfect vs Past Simple и passive voice.
                 </span>
               </p>
               <div class="rule-meta">
                 <span class="pill">A1–B2</span>
-                <span class="pill">6 sub-units</span>
+                <span class="pill">7 sub-units</span>
                 <span class="pill">Tests</span>
               </div>
             </a>
@@ -1300,6 +1325,16 @@
           <span class="nav-sub">
             <span class="inline-lang" data-lang="kk">Етістік</span>
             <span class="inline-lang" data-lang="ru">Глагол</span>
+          </span>
+        </a>
+
+
+
+        <a class="nav-item" href="#verb-conditionals">
+          <span class="nav-main">Conditionals</span>
+          <span class="nav-sub">
+            <span class="inline-lang" data-lang="kk">Шартты сөйлемдер</span>
+            <span class="inline-lang" data-lang="ru">Условные предложения</span>
           </span>
         </a>
 
@@ -2159,6 +2194,16 @@
                 </span>
               </a>
 
+
+
+              <a class="subunit-chip" href="#verb-conditionals">
+                <strong>Conditionals</strong>
+                <span>
+                  <span class="inline-lang" data-lang="kk">Шартты сөйлемдер</span>
+                  <span class="inline-lang" data-lang="ru">Условные предложения</span>
+                </span>
+              </a>
+
               <a class="subunit-chip" href="#verb-active-passive">
                 <strong>Active & Passive Voice</strong>
                 <span>
@@ -2169,6 +2214,113 @@
             </div>
           </div>
         </div>
+
+
+
+        <article class="subunit" id="verb-basics">
+          <div class="subunit-header">
+            <div class="subunit-label">Verb · Basic Grammar</div>
+            <h3>Basic words before tenses</h3>
+            <div class="subunit-translation">
+              <span class="inline-lang" data-lang="kk">Шақтарды бастамас бұрын керек негізгі сөздер</span>
+              <span class="inline-lang" data-lang="ru">Базовые слова перед изучением времён</span>
+            </div>
+          </div>
+
+          <div class="subunit-body">
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Subject</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Subject</b> — сөйлемдегі іс-әрекетті орындайтын адам, зат немесе ұғым. Қазақша <b>бастауыш</b>. Ол көбіне “кім?” немесе “не?” деген сұраққа жауап береді.</p>
+                  <p><b>I study English.</b> Бұл сөйлемде <b>I</b> — subject, себебі әрекетті істеп тұрған адам — “мен”.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Subject</b> — это человек, предмет или понятие, которое выполняет действие в предложении. По-русски это <b>подлежащее</b>. Оно обычно отвечает на вопрос “кто?” или “что?”.</p>
+                  <p><b>I study English.</b> В этом предложении <b>I</b> — subject, потому что действие выполняет “я”.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Verb</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Verb</b> — әрекетті немесе жағдайды білдіретін сөз. Қазақша <b>етістік</b>. Ол “не істейді?”, “не болды?”, “қандай күйде?” деген мағынаны береді.</p>
+                  <p>Мысалы: <b>study, work, go, live, be, have</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Verb</b> — это слово, которое показывает действие или состояние. По-русски это <b>глагол</b>.</p>
+                  <p>Например: <b>study, work, go, live, be, have</b>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Object</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Object</b> — әрекет бағытталған адам немесе зат. Қазақша мағынасы: толықтауыш. Ол “кімді?”, “нені?”, “кімге?”, “неге?” деген сұрақтарға жауап бере алады.</p>
+                  <p><b>She reads a book.</b> Мұнда <b>a book</b> — object, себебі оқылатын нәрсе — кітап.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Object</b> — это человек или предмет, на который направлено действие. По-русски это дополнение.</p>
+                  <p><b>She reads a book.</b> Здесь <b>a book</b> — object, потому что читают именно книгу.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Auxiliary verb</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Auxiliary verb</b> — негізгі етістікке көмектесетін көмекші етістік. Ол сұрақ, болымсыз сөйлем, continuous, perfect немесе passive жасауға көмектеседі.</p>
+                  <p>Негізгілері: <b>do / does / did, am / is / are / was / were, have / has / had, will</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Auxiliary verb</b> — это вспомогательный глагол. Он помогает строить вопрос, отрицание, continuous, perfect или passive.</p>
+                  <p>Основные: <b>do / does / did, am / is / are / was / were, have / has / had, will</b>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="formula-box">
+              <div class="formula-main">Subject + auxiliary verb + main verb + object</div>
+              <div class="formula-translation">
+                <span class="inline-lang" data-lang="kk">Үлгі: бастауыш + көмекші етістік + негізгі етістік + толықтауыш.</span>
+                <span class="inline-lang" data-lang="ru">Схема: подлежащее + вспомогательный глагол + основной глагол + дополнение.</span>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>V1 / V2 / V3 / V-ing</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>V1</b> — етістіктің негізгі формасы: <b>go, write, study</b>.</p>
+                  <p><b>V2</b> — Past Simple формасы: <b>went, wrote, studied</b>.</p>
+                  <p><b>V3</b> — Past Participle формасы: <b>gone, written, studied</b>. Perfect және Passive ішінде жиі қолданылады.</p>
+                  <p><b>V-ing</b> — -ing формасы: <b>going, writing, studying</b>. Continuous және gerund ішінде қолданылады.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>V1</b> — базовая форма глагола: <b>go, write, study</b>.</p>
+                  <p><b>V2</b> — форма Past Simple: <b>went, wrote, studied</b>.</p>
+                  <p><b>V3</b> — Past Participle: <b>gone, written, studied</b>. Часто используется в Perfect и Passive.</p>
+                  <p><b>V-ing</b> — форма с -ing: <b>going, writing, studying</b>. Используется в Continuous и Gerund.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Positive / Negative / Question</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Positive</b> — болымды сөйлем: <b>She studies English.</b></p>
+                  <p><b>Negative</b> — болымсыз сөйлем: <b>She does not study English.</b></p>
+                  <p><b>Question</b> — сұрақ: <b>Does she study English?</b></p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Positive</b> — утвердительное предложение: <b>She studies English.</b></p>
+                  <p><b>Negative</b> — отрицание: <b>She does not study English.</b></p>
+                  <p><b>Question</b> — вопрос: <b>Does she study English?</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <article class="subunit" id="verb-present">
           <div class="subunit-header">
@@ -2327,7 +2479,68 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="verb-present-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Present Simple · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + V1 / V-s. Болымсыз: Subject + do/does not + V1. Сұрақ: Do/Does + subject + V1?</p>
+                  <p><b>Қолданылуы:</b> күнделікті әдет, тұрақты әрекет, жалпы факт, кесте немесе заңдылық.</p>
+                  <p><b>Signal words:</b> always, usually, often, sometimes, never, every day.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + V1 / V-s. Отрицание: Subject + do/does not + V1. Вопрос: Do/Does + subject + V1?</p>
+                  <p><b>Когда используется:</b> привычки, регулярные действия, факты, расписания, общие истины.</p>
+                  <p><b>Signal words:</b> always, usually, often, sometimes, never, every day.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Present Continuous · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + am/is/are + V-ing. Болымсыз: am/is/are not + V-ing. Сұрақ: Am/Is/Are + subject + V-ing?</p>
+                  <p><b>Қолданылуы:</b> дәл қазір болып жатқан әрекет, уақытша жағдай, қазіргі кезеңде жүріп жатқан өзгеріс.</p>
+                  <p><b>Signal words:</b> now, at the moment, currently, today, this week.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + am/is/are + V-ing. Отрицание: am/is/are not + V-ing. Вопрос: Am/Is/Are + subject + V-ing?</p>
+                  <p><b>Когда используется:</b> действие прямо сейчас, временная ситуация, изменение в текущий период.</p>
+                  <p><b>Signal words:</b> now, at the moment, currently, today, this week.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Present Perfect · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + have/has + V3. Болымсыз: have/has not + V3. Сұрақ: Have/Has + subject + V3?</p>
+                  <p><b>Қолданылуы:</b> нәтижесі қазір маңызды әрекет, өмірлік тәжірибе, нақты уақыты айтылмаған өткен әрекет.</p>
+                  <p><b>Signal words:</b> already, just, yet, ever, never, recently, so far.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + have/has + V3. Отрицание: have/has not + V3. Вопрос: Have/Has + subject + V3?</p>
+                  <p><b>Когда используется:</b> результат важен сейчас, жизненный опыт, прошлое действие без точного времени.</p>
+                  <p><b>Signal words:</b> already, just, yet, ever, never, recently, so far.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Present Perfect Continuous · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + have/has been + V-ing.</p>
+                  <p><b>Қолданылуы:</b> әрекет өткенде басталып, қазірге дейін жалғасады немесе оның ізі қазір көрінеді.</p>
+                  <p><b>Signal words:</b> for, since, all day, recently, lately.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + have/has been + V-ing.</p>
+                  <p><b>Когда используется:</b> действие началось в прошлом и продолжается до настоящего момента или его след виден сейчас.</p>
+                  <p><b>Signal words:</b> for, since, all day, recently, lately.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="verb-present-test">
               <div class="test-header">
                 <h4>Mini test · Present Tense</h4>
                 <span class="mini-badge">5 questions</span>
@@ -2559,7 +2772,66 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="verb-past-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Past Simple · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + V2. Болымсыз: Subject + did not + V1. Сұрақ: Did + subject + V1?</p>
+                  <p><b>Қолданылуы:</b> өткен уақытта нақты аяқталған әрекет.</p>
+                  <p><b>Signal words:</b> yesterday, last week, in 2020, ago, when I was a child.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + V2. Отрицание: Subject + did not + V1. Вопрос: Did + subject + V1?</p>
+                  <p><b>Когда используется:</b> действие закончилось в конкретном прошлом времени.</p>
+                  <p><b>Signal words:</b> yesterday, last week, in 2020, ago, when I was a child.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Past Continuous · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + was/were + V-ing.</p>
+                  <p><b>Қолданылуы:</b> өткен уақытта белгілі бір сәтте жүріп жатқан әрекет немесе бір әрекет болып жатқанда екінші әрекет араласты.</p>
+                  <p><b>Signal words:</b> at 5 yesterday, while, when.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + was/were + V-ing.</p>
+                  <p><b>Когда используется:</b> действие длилось в определённый момент в прошлом или одно действие происходило, когда другое его прервало.</p>
+                  <p><b>Signal words:</b> at 5 yesterday, while, when.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Past Perfect · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + had + V3.</p>
+                  <p><b>Қолданылуы:</b> өткендегі бір әрекет басқа өткен әрекеттен бұрын болғанын көрсету.</p>
+                  <p><b>Signal words:</b> before, after, by the time, already.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + had + V3.</p>
+                  <p><b>Когда используется:</b> одно действие произошло раньше другого действия в прошлом.</p>
+                  <p><b>Signal words:</b> before, after, by the time, already.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Past Perfect Continuous · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> Subject + had been + V-ing.</p>
+                  <p><b>Қолданылуы:</b> өткендегі бір уақытқа дейін қанша уақыт бойы әрекет жалғасқанын көрсету.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> Subject + had been + V-ing.</p>
+                  <p><b>Когда используется:</b> действие продолжалось какое-то время до другого момента в прошлом.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="verb-past-test">
               <div class="test-header">
                 <h4>Mini test · Past Tense</h4>
                 <span class="mini-badge">5 questions</span>
@@ -2786,7 +3058,36 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="verb-pp-vs-ps-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Present Perfect vs Past Simple</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Past Simple</b> нақты өткен уақытпен қолданылады: yesterday, last year, in 2020, two days ago.</p>
+                  <p><b>Present Perfect</b> нақты өткен уақытты айтпайды, нәтиже немесе тәжірибе маңызды: already, just, ever, never, yet.</p>
+                  <p><b>I saw this film yesterday.</b> — уақыт нақты. <b>I have seen this film.</b> — тәжірибе маңызды.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Past Simple</b> используется с конкретным прошлым временем: yesterday, last year, in 2020, two days ago.</p>
+                  <p><b>Present Perfect</b> не называет точное прошлое время; важен результат или опыт: already, just, ever, never, yet.</p>
+                  <p><b>I saw this film yesterday.</b> — время конкретное. <b>I have seen this film.</b> — важен опыт.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Exam logic</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p>Егер сөйлемде <b>yesterday / ago / last...</b> болса, көбіне <b>Past Simple</b> керек.</p>
+                  <p>Егер сөйлемде <b>already / just / yet / ever / never</b> болса, көбіне <b>Present Perfect</b> керек.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p>Если в предложении есть <b>yesterday / ago / last...</b>, чаще всего нужен <b>Past Simple</b>.</p>
+                  <p>Если есть <b>already / just / yet / ever / never</b>, чаще всего нужен <b>Present Perfect</b>.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="verb-pp-vs-ps-test">
               <div class="test-header">
                 <h4>Mini test · Present Perfect vs Past Simple</h4>
                 <span class="mini-badge">5 questions</span>
@@ -3035,7 +3336,38 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="verb-future-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Future forms · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>will + V1</b> — кенет шешім, болжам, уәде: <b>I will help you.</b></p>
+                  <p><b>be going to + V1</b> — жоспар немесе дәлелі бар болжам: <b>She is going to travel.</b></p>
+                  <p><b>Present Continuous</b> — нақты ұйымдастырылған жоспар: <b>I am meeting him tomorrow.</b></p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>will + V1</b> — спонтанное решение, прогноз, обещание: <b>I will help you.</b></p>
+                  <p><b>be going to + V1</b> — план или прогноз с доказательством: <b>She is going to travel.</b></p>
+                  <p><b>Present Continuous</b> — точно организованный план: <b>I am meeting him tomorrow.</b></p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Future Perfect / Future Continuous</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Future Continuous:</b> will be + V-ing — болашақтағы белгілі бір сәтте әрекет жүріп жатады.</p>
+                  <p><b>Future Perfect:</b> will have + V3 — болашақтағы белгілі бір уақытқа дейін әрекет аяқталады.</p>
+                  <p><b>by tomorrow / by next year</b> болса, Future Perfect жиі қолданылады.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Future Continuous:</b> will be + V-ing — действие будет происходить в определённый момент будущего.</p>
+                  <p><b>Future Perfect:</b> will have + V3 — действие завершится к определённому моменту будущего.</p>
+                  <p>Если есть <b>by tomorrow / by next year</b>, часто нужен Future Perfect.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="verb-future-test">
               <div class="test-header">
                 <h4>Mini test · Future Tense</h4>
                 <span class="mini-badge">5 questions</span>
@@ -3126,6 +3458,182 @@
                     <li><b>will start</b> правильно, после will идёт основной глагол.</li>
                   </ol>
                 </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="subunit" id="verb-conditionals">
+          <div class="subunit-header">
+            <div class="subunit-label">Verb · Sub-unit 5</div>
+            <h3>Conditionals</h3>
+            <div class="subunit-translation">
+              <span class="inline-lang" data-lang="kk">Шартты сөйлемдер</span>
+              <span class="inline-lang" data-lang="ru">Условные предложения</span>
+            </div>
+          </div>
+
+          <div class="subunit-body">
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>English rule</h4>
+                <p>
+                  Conditional sentences show a condition and its result. They usually have two parts: an if-clause
+                  and a main clause. The if-clause gives the condition; the main clause gives the result.
+                </p>
+              </div>
+
+              <div class="lesson-box">
+                <h4>
+                  <span class="inline-lang" data-lang="kk">Түсіндіру</span>
+                  <span class="inline-lang" data-lang="ru">Объяснение</span>
+                </h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Conditional sentence</b> — шарт пен нәтиже көрсететін сөйлем. Әдетте екі бөлігі болады: <b>if-clause</b> және <b>main clause</b>.</p>
+                  <p><b>If-clause</b> — шарт бөлігі: “егер ... болса”. <b>Main clause</b> — нәтиже бөлігі: “онда не болады / не болар еді”.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Conditional sentence</b> — это условное предложение. Оно показывает условие и результат. Обычно есть две части: <b>if-clause</b> и <b>main clause</b>.</p>
+                  <p><b>If-clause</b> — часть с условием: “если ...”. <b>Main clause</b> — часть с результатом: “что произойдёт / произошло бы”.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="formula-box">
+              <div class="formula-main">If + condition, result · Result + if + condition</div>
+              <div class="formula-translation">
+                <span class="inline-lang" data-lang="kk">If бөлігі басында да, сөйлем соңында да тұра алады. Мағына өзгермейді.</span>
+                <span class="inline-lang" data-lang="ru">Часть с if может стоять в начале или в конце предложения. Смысл не меняется.</span>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Zero Conditional</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> If + Present Simple, Present Simple.</p>
+                  <p><b>Қолданылуы:</b> жалпы шындық, ғылыми факт, әрқашан болатын нәтиже.</p>
+                  <p><b>If you heat water, it boils.</b> — Егер суды қыздырсаң, ол қайнайды.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> If + Present Simple, Present Simple.</p>
+                  <p><b>Когда используется:</b> общая истина, научный факт, результат, который происходит всегда.</p>
+                  <p><b>If you heat water, it boils.</b> — Если нагреть воду, она кипит.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>First Conditional</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> If + Present Simple, will + V1.</p>
+                  <p><b>Қолданылуы:</b> болашақта болуы мүмкін нақты жағдай.</p>
+                  <p><b>If I pass the exam, I will celebrate.</b> — Егер емтиханнан өтсем, тойлаймын.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> If + Present Simple, will + V1.</p>
+                  <p><b>Когда используется:</b> реальная возможная ситуация в будущем.</p>
+                  <p><b>If I pass the exam, I will celebrate.</b> — Если я сдам экзамен, я отпраздную.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Second Conditional</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> If + Past Simple, would + V1.</p>
+                  <p><b>Қолданылуы:</b> қазіргі немесе болашақтағы қиял, мүмкін емес немесе екіталай жағдай.</p>
+                  <p><b>If I had more time, I would travel.</b> — Уақытым көбірек болса, саяхаттар едім.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> If + Past Simple, would + V1.</p>
+                  <p><b>Когда используется:</b> воображаемая, невозможная или маловероятная ситуация в настоящем/будущем.</p>
+                  <p><b>If I had more time, I would travel.</b> — Если бы у меня было больше времени, я бы путешествовала.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Third Conditional</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Formula:</b> If + Past Perfect, would have + V3.</p>
+                  <p><b>Қолданылуы:</b> өткенде болмаған нәрсеге өкініш немесе басқа нәтиже туралы айту.</p>
+                  <p><b>If I had studied harder, I would have passed.</b> — Көбірек оқығанда, өтер едім.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Formula:</b> If + Past Perfect, would have + V3.</p>
+                  <p><b>Когда используется:</b> сожаление или другой результат о прошлом, которое уже нельзя изменить.</p>
+                  <p><b>If I had studied harder, I would have passed.</b> — Если бы я училась усерднее, я бы сдала.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Mixed Conditional</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Past condition + present result:</b> If + Past Perfect, would + V1.</p>
+                  <p><b>If I had saved money, I would be in Greece now.</b> — Егер ақша жинағанда, қазір Грецияда болар едім.</p>
+                  <p>Бұл жерде шарт өткенде, нәтиже қазір.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Past condition + present result:</b> If + Past Perfect, would + V1.</p>
+                  <p><b>If I had saved money, I would be in Greece now.</b> — Если бы я накопила деньги, я бы сейчас была в Греции.</p>
+                  <p>Здесь условие в прошлом, а результат сейчас.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Unless / if not · If / when</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Unless</b> = <b>if not</b>: <b>Unless you study, you will fail.</b> — Егер оқымасаң, құлайсың.</p>
+                  <p><b>If</b> — белгісіз шарт. <b>When</b> — болатын нәрсе белгілі, тек уақыты айтылып тұр.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Unless</b> = <b>if not</b>: <b>Unless you study, you will fail.</b> — Если ты не будешь учиться, ты провалишься.</p>
+                  <p><b>If</b> — условие не гарантировано. <b>When</b> — событие точно произойдёт, вопрос только во времени.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mistake-box">
+              <h4>
+                <span class="inline-lang" data-lang="kk">Жиі қате</span>
+                <span class="inline-lang" data-lang="ru">Частая ошибка</span>
+              </h4>
+              <p>
+                <span class="inline-lang" data-lang="kk">First Conditional ішінде if бөлігінде <b>will</b> қолданылмайды: қате — <b>If I will pass...</b>; дұрыс — <b>If I pass, I will...</b></span>
+                <span class="inline-lang" data-lang="ru">В First Conditional в части с if обычно не используется <b>will</b>: ошибка — <b>If I will pass...</b>; правильно — <b>If I pass, I will...</b></span>
+              </p>
+            </div>
+
+            <div class="test-box" data-test="verb-conditionals-test">
+              <div class="test-header">
+                <h4>Mini test · Conditionals</h4>
+                <span class="mini-badge">10 questions</span>
+              </div>
+
+              <div class="question" data-answer="b"><p>1. If you heat ice, it ___.</p><div class="options"><label class="option"><input type="radio" name="cond-1" value="a"> melted</label><label class="option"><input type="radio" name="cond-1" value="b"> melts</label><label class="option"><input type="radio" name="cond-1" value="c"> will melted</label><label class="option"><input type="radio" name="cond-1" value="d"> would melt</label><label class="option"><input type="radio" name="cond-1" value="e"> had melted</label></div></div>
+              <div class="question" data-answer="d"><p>2. If I pass the test, I ___ happy.</p><div class="options"><label class="option"><input type="radio" name="cond-2" value="a"> am being</label><label class="option"><input type="radio" name="cond-2" value="b"> was</label><label class="option"><input type="radio" name="cond-2" value="c"> would be</label><label class="option"><input type="radio" name="cond-2" value="d"> will be</label><label class="option"><input type="radio" name="cond-2" value="e"> had been</label></div></div>
+              <div class="question" data-answer="a"><p>3. If she ___ more time, she would read more.</p><div class="options"><label class="option"><input type="radio" name="cond-3" value="a"> had</label><label class="option"><input type="radio" name="cond-3" value="b"> has</label><label class="option"><input type="radio" name="cond-3" value="c"> will have</label><label class="option"><input type="radio" name="cond-3" value="d"> have</label><label class="option"><input type="radio" name="cond-3" value="e"> is having</label></div></div>
+              <div class="question" data-answer="e"><p>4. If they had studied harder, they ___ the exam.</p><div class="options"><label class="option"><input type="radio" name="cond-4" value="a"> will pass</label><label class="option"><input type="radio" name="cond-4" value="b"> would pass</label><label class="option"><input type="radio" name="cond-4" value="c"> passed</label><label class="option"><input type="radio" name="cond-4" value="d"> had passed</label><label class="option"><input type="radio" name="cond-4" value="e"> would have passed</label></div></div>
+              <div class="question" data-answer="c"><p>5. Unless you hurry, you ___ late.</p><div class="options"><label class="option"><input type="radio" name="cond-5" value="a"> are being</label><label class="option"><input type="radio" name="cond-5" value="b"> would be</label><label class="option"><input type="radio" name="cond-5" value="c"> will be</label><label class="option"><input type="radio" name="cond-5" value="d"> had been</label><label class="option"><input type="radio" name="cond-5" value="e"> were</label></div></div>
+              <div class="question" data-answer="a"><p>6. Choose the correct First Conditional sentence.</p><div class="options"><label class="option"><input type="radio" name="cond-6" value="a"> If it rains, we will stay at home.</label><label class="option"><input type="radio" name="cond-6" value="b"> If it will rain, we stay at home.</label><label class="option"><input type="radio" name="cond-6" value="c"> If it rained, we will stayed at home.</label><label class="option"><input type="radio" name="cond-6" value="d"> If it has rained, we would stay at home.</label><label class="option"><input type="radio" name="cond-6" value="e"> If it rains, we would have stayed at home.</label></div></div>
+              <div class="question" data-answer="d"><p>7. If I were you, I ___ this offer.</p><div class="options"><label class="option"><input type="radio" name="cond-7" value="a"> accept</label><label class="option"><input type="radio" name="cond-7" value="b"> will accept</label><label class="option"><input type="radio" name="cond-7" value="c"> accepted</label><label class="option"><input type="radio" name="cond-7" value="d"> would accept</label><label class="option"><input type="radio" name="cond-7" value="e"> had accepted</label></div></div>
+              <div class="question" data-answer="b"><p>8. If I had saved money, I ___ abroad now.</p><div class="options"><label class="option"><input type="radio" name="cond-8" value="a"> will be</label><label class="option"><input type="radio" name="cond-8" value="b"> would be</label><label class="option"><input type="radio" name="cond-8" value="c"> would have been</label><label class="option"><input type="radio" name="cond-8" value="d"> am</label><label class="option"><input type="radio" name="cond-8" value="e"> had been</label></div></div>
+              <div class="question" data-answer="e"><p>9. When I ___ home, I will call you.</p><div class="options"><label class="option"><input type="radio" name="cond-9" value="a"> will arrive</label><label class="option"><input type="radio" name="cond-9" value="b"> arrived</label><label class="option"><input type="radio" name="cond-9" value="c"> would arrive</label><label class="option"><input type="radio" name="cond-9" value="d"> had arrived</label><label class="option"><input type="radio" name="cond-9" value="e"> arrive</label></div></div>
+              <div class="question" data-answer="c"><p>10. If she had not missed the bus, she ___ on time.</p><div class="options"><label class="option"><input type="radio" name="cond-10" value="a"> will arrive</label><label class="option"><input type="radio" name="cond-10" value="b"> would arrive</label><label class="option"><input type="radio" name="cond-10" value="c"> would have arrived</label><label class="option"><input type="radio" name="cond-10" value="d"> arrives</label><label class="option"><input type="radio" name="cond-10" value="e"> had arrived</label></div></div>
+
+              <button class="check-btn" type="button" data-check="verb-conditionals-test">
+                <span class="inline-lang" data-lang="kk">Жауаптарды тексеру</span>
+                <span class="inline-lang" data-lang="ru">Проверить ответы</span>
+              </button>
+
+              <div class="result-box" data-result="verb-conditionals-test">
+                <h5><span class="inline-lang" data-lang="kk">Түсіндірме</span><span class="inline-lang" data-lang="ru">Объяснение</span></h5>
+                <div class="lang-content" data-lang="kk"><ol><li><b>melts</b> дұрыс: Zero Conditional — If + Present Simple, Present Simple.</li><li><b>will be</b> дұрыс: First Conditional — If + Present Simple, will + V1.</li><li><b>had</b> дұрыс: Second Conditional — If + Past Simple, would + V1.</li><li><b>would have passed</b> дұрыс: Third Conditional — would have + V3.</li><li><b>will be</b> дұрыс: unless = if not, болашақ нақты нәтиже.</li><li><b>If it rains, we will stay...</b> дұрыс: if бөлігінде will қолданылмайды.</li><li><b>would accept</b> дұрыс: If I were you — Second Conditional.</li><li><b>would be</b> дұрыс: mixed conditional, өткен шарт + қазіргі нәтиже.</li><li><b>arrive</b> дұрыс: when/if future meaning болса да, бағыныңқы бөлікте Present Simple қолданылады.</li><li><b>would have arrived</b> дұрыс: өткендегі болмаған жағдайдың нәтижесі.</li></ol></div>
+                <div class="lang-content" data-lang="ru"><ol><li><b>melts</b> правильно: Zero Conditional — If + Present Simple, Present Simple.</li><li><b>will be</b> правильно: First Conditional — If + Present Simple, will + V1.</li><li><b>had</b> правильно: Second Conditional — If + Past Simple, would + V1.</li><li><b>would have passed</b> правильно: Third Conditional — would have + V3.</li><li><b>will be</b> правильно: unless = if not, реальный будущий результат.</li><li><b>If it rains, we will stay...</b> правильно: в части с if не ставим will.</li><li><b>would accept</b> правильно: If I were you — Second Conditional.</li><li><b>would be</b> правильно: mixed conditional, прошлое условие + настоящий результат.</li><li><b>arrive</b> правильно: после when/if с будущим значением в придаточной части используется Present Simple.</li><li><b>would have arrived</b> правильно: результат нереального условия в прошлом.</li></ol></div>
               </div>
             </div>
           </div>
@@ -3281,7 +3789,34 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="verb-passive-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Active vs Passive · full rule</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Active Voice</b> — әрекетті кім істегені маңызды: <b>The teacher checked the test.</b></p>
+                  <p><b>Passive Voice</b> — әрекет кімге/неге жасалғаны маңызды: <b>The test was checked.</b></p>
+                  <p><b>General formula:</b> object + be + V3. Be шаққа қарай өзгереді: <b>is / are / was / were / has been / will be</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Active Voice</b> — важно, кто выполняет действие: <b>The teacher checked the test.</b></p>
+                  <p><b>Passive Voice</b> — важно, над кем/чем совершили действие: <b>The test was checked.</b></p>
+                  <p><b>General formula:</b> object + be + V3. Be меняется по времени: <b>is / are / was / were / has been / will be</b>.</p>
+                </div>
+              </div>
+
+              <div class="lesson-box">
+                <h4>Passive by tenses</h4>
+                <ul>
+                  <li>Present Simple Passive: is/are + V3 — The text is translated.</li>
+                  <li>Past Simple Passive: was/were + V3 — The text was translated.</li>
+                  <li>Present Perfect Passive: has/have been + V3 — The text has been translated.</li>
+                  <li>Future Passive: will be + V3 — The text will be translated.</li>
+                </ul>
+              </div>
+            </div>
+<div class="test-box" data-test="verb-passive-test">
               <div class="test-header">
                 <h4>Mini test · Active & Passive Voice</h4>
                 <span class="mini-badge">5 questions</span>
@@ -3585,7 +4120,33 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="modal-verbs-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Modal verbs · meaning</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>can</b> — қабілет/мүмкіндік. <b>may</b> — рұқсат/мүмкіндік. <b>must</b> — міндет немесе қатты қажеттілік. <b>should</b> — кеңес. <b>have to</b> — сыртқы міндет.</p>
+                  <p>Modal verb-тен кейін негізгі етістік әрқашан <b>V1</b> болады: <b>can go</b>, <b>must study</b>, <b>should revise</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>can</b> — способность/возможность. <b>may</b> — разрешение/возможность. <b>must</b> — обязанность или сильная необходимость. <b>should</b> — совет. <b>have to</b> — внешняя обязанность.</p>
+                  <p>После modal verb основной глагол всегда стоит в <b>V1</b>: <b>can go</b>, <b>must study</b>, <b>should revise</b>.</p>
+                </div>
+              </div>
+              <div class="lesson-box">
+                <h4>Common modal mistakes</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p>Қате: <b>She can studies</b>. Дұрыс: <b>She can study</b>.</p>
+                  <p>Қате: <b>He must to go</b>. Дұрыс: <b>He must go</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p>Ошибка: <b>She can studies</b>. Правильно: <b>She can study</b>.</p>
+                  <p>Ошибка: <b>He must to go</b>. Правильно: <b>He must go</b>.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="modal-verbs-test">
               <div class="test-header">
                 <h4>Mini test · Modal Verbs</h4>
                 <span class="mini-badge">5 questions</span>
@@ -3821,7 +4382,31 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="infinitive-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Infinitive · when to use</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Infinitive</b> көбіне <b>to + V1</b> түрінде келеді: <b>to study, to work, to apply</b>.</p>
+                  <p>Ол мақсатты білдіреді: <b>I came to study.</b> Сондай-ақ кейбір етістіктерден кейін келеді: <b>want to, decide to, plan to, hope to, need to</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Infinitive</b> чаще всего выглядит как <b>to + V1</b>: <b>to study, to work, to apply</b>.</p>
+                  <p>Он показывает цель: <b>I came to study.</b> Также используется после некоторых глаголов: <b>want to, decide to, plan to, hope to, need to</b>.</p>
+                </div>
+              </div>
+              <div class="lesson-box">
+                <h4>Bare infinitive</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Bare infinitive</b> — <b>to</b> жоқ V1. Ол modal verbs-тен кейін қолданылады: <b>can go, must study, should revise</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Bare infinitive</b> — V1 без <b>to</b>. Он используется после modal verbs: <b>can go, must study, should revise</b>.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="infinitive-test">
               <div class="test-header">
                 <h4>Mini test · Infinitive</h4>
                 <span class="mini-badge">5 questions</span>
@@ -4056,7 +4641,28 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="gerund-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Gerund · when to use</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Gerund</b> — етістіктің <b>-ing</b> формасы, бірақ сөйлемде зат есім сияқты қызмет етеді: <b>Reading is useful.</b></p>
+                  <p>Ол preposition-нан кейін жиі келеді: <b>after reading, before leaving, interested in studying</b>.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Gerund</b> — форма глагола с <b>-ing</b>, но в предложении она работает как существительное: <b>Reading is useful.</b></p>
+                  <p>Он часто стоит после предлога: <b>after reading, before leaving, interested in studying</b>.</p>
+                </div>
+              </div>
+              <div class="lesson-box">
+                <h4>Common verbs + gerund</h4>
+                <p><b>enjoy doing, avoid doing, finish doing, keep doing, suggest doing, mind doing</b></p>
+                <div class="lang-content" data-lang="kk"><p>Емтиханда enjoy, avoid, finish сияқты сөздерден кейін көбіне <b>-ing</b> формасы сұралады.</p></div>
+                <div class="lang-content" data-lang="ru"><p>На экзамене после enjoy, avoid, finish часто требуется форма <b>-ing</b>.</p></div>
+              </div>
+            </div>
+<div class="test-box" data-test="gerund-test">
               <div class="test-header">
                 <h4>Mini test · Gerund</h4>
                 <span class="mini-badge">5 questions</span>
@@ -4303,7 +4909,33 @@
               </p>
             </div>
 
-            <div class="test-box" data-test="participle-test">
+            
+
+            <div class="lesson-layout">
+              <div class="lesson-box">
+                <h4>Participle · forms</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>Present Participle</b> — V-ing: <b>working, studying, writing</b>. Ол continuous шақтарда және сипаттауда қолданылады.</p>
+                  <p><b>Past Participle</b> — V3: <b>written, done, studied</b>. Ол perfect және passive ішінде қолданылады.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>Present Participle</b> — V-ing: <b>working, studying, writing</b>. Используется в continuous и описаниях.</p>
+                  <p><b>Past Participle</b> — V3: <b>written, done, studied</b>. Используется в perfect и passive.</p>
+                </div>
+              </div>
+              <div class="lesson-box">
+                <h4>-ing vs V3</h4>
+                <div class="lang-content" data-lang="kk">
+                  <p><b>The boring lesson</b> — сабақ іш пыстырады. <b>The bored student</b> — студенттің іші пысты.</p>
+                  <p><b>has written</b> — perfect. <b>was written</b> — passive.</p>
+                </div>
+                <div class="lang-content" data-lang="ru">
+                  <p><b>The boring lesson</b> — урок скучный. <b>The bored student</b> — студенту скучно.</p>
+                  <p><b>has written</b> — perfect. <b>was written</b> — passive.</p>
+                </div>
+              </div>
+            </div>
+<div class="test-box" data-test="participle-test">
               <div class="test-header">
                 <h4>Mini test · Participle</h4>
                 <span class="mini-badge">5 questions</span>
@@ -4817,6 +5449,8 @@
     </div>
   </footer>
 
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const body = document.body;
@@ -4825,112 +5459,3 @@
         if (lang !== "kk" && lang !== "ru") {
           lang = "kk";
         }
-
-        body.classList.remove("lang-kk", "lang-ru");
-        body.classList.add("lang-" + lang);
-
-        document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
-          btn.classList.toggle("active", btn.getAttribute("data-set-lang") === lang);
-        });
-
-        try {
-          localStorage.setItem("geGrammarPart2Lang", lang);
-        } catch (e) {}
-      }
-
-      document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          const lang = btn.getAttribute("data-set-lang");
-          setLanguage(lang);
-        });
-      });
-
-      let savedLang = "kk";
-      try {
-        savedLang = localStorage.getItem("geGrammarPart2Lang") || "kk";
-      } catch (e) {}
-
-      setLanguage(savedLang);
-
-      function checkTest(testId) {
-        const testBox = document.querySelector('[data-test="' + testId + '"]');
-        const resultBox = document.querySelector('[data-result="' + testId + '"]');
-
-        if (!testBox || !resultBox) {
-          console.log("Test or result not found:", testId);
-          return;
-        }
-
-        const questions = testBox.querySelectorAll(".question");
-        let score = 0;
-
-        questions.forEach(function (question) {
-          const correctAnswer = question.getAttribute("data-answer");
-          const selected = question.querySelector('input[type="radio"]:checked');
-
-          question.querySelectorAll(".option").forEach(function (option) {
-            option.classList.remove("correct", "wrong");
-
-            const input = option.querySelector("input");
-            if (!input) return;
-
-            if (input.value === correctAnswer) {
-              option.classList.add("correct");
-            }
-
-            if (selected && input.checked && input.value !== correctAnswer) {
-              option.classList.add("wrong");
-            }
-          });
-
-          if (selected && selected.value === correctAnswer) {
-            score++;
-          }
-        });
-
-        const oldScore = resultBox.querySelector(".score-line");
-        if (oldScore) oldScore.remove();
-
-        const scoreLine = document.createElement("div");
-        scoreLine.className = "score-line";
-        scoreLine.innerHTML =
-          '<span class="inline-lang" data-lang="kk">Нәтиже: ' + score + ' / ' + questions.length + '</span>' +
-          '<span class="inline-lang" data-lang="ru">Результат: ' + score + ' / ' + questions.length + '</span>';
-
-        resultBox.prepend(scoreLine);
-        resultBox.classList.add("show");
-
-        const currentLang = body.classList.contains("lang-ru") ? "ru" : "kk";
-        setLanguage(currentLang);
-
-        resultBox.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest"
-        });
-      }
-
-      document.querySelectorAll("[data-check]").forEach(function (button) {
-        button.addEventListener("click", function () {
-          const testId = button.getAttribute("data-check");
-          checkTest(testId);
-        });
-      });
-
-      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          const targetId = link.getAttribute("href");
-          const target = document.querySelector(targetId);
-
-          if (!target) return;
-
-          event.preventDefault();
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-        });
-      });
-    });
-  </script>
-</body>
-</html>
